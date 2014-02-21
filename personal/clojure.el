@@ -4,7 +4,14 @@
 ;; Let's try smartparens
 (prelude-require-package 'smartparens)
 
+(add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
+
 ;; Cider
+(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+(setq cider-repl-pop-to-buffer-on-connect t)
+(setq cider-popup-stacktraces t)
+(setq cider-repl-popup-stacktraces t)
+(setq cider-auto-select-error-buffer t)
 (setq nrepl-hide-special-buffers t)
 (setq cider-repl-result-prefix ";; => ")
 (setq cider-interactive-eval-result-prefix ";; => ")
