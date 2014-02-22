@@ -72,7 +72,7 @@
 
 ;; font
 ;; (set-frame-font "Menlo-14")
-(set-frame-font "CosmicSansNeueMono-14")
+(set-frame-font "Inconsolata-14")
 
 ;; theme
-(load-theme 'cyberpunk t)
+;(load-theme 'cyberpunk t)
