@@ -1,9 +1,6 @@
 ;; Clojure related stuff
 ;;
 
-;; Let's try smartparens
-(prelude-require-package 'smartparens)
-
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
 
 ;; Cider
